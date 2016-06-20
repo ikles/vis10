@@ -369,8 +369,15 @@ b, strong
 .col-left-top-mnu 
 	overflow: hidden
 
+.col-table-vk
+	background: url("../img/bg_table_vk.jpg") no-repeat 0 0
+	overflow: hidden
+	min-height: 419px 
+	padding: 60px 0
+	box-sizing: border-box
+	width: 100%
+
 .left_mnu 
-	margin-bottom: 30px
 	box-sizing: border-box
 	padding: 0
 	width: 170px
@@ -506,45 +513,49 @@ h1
 
 .price_table
 	font-family: RobotoB 
-	width: 100%
-	margin-top: 20px
-	margin-bottom: 30px
-	overflow: hidden 		
+	width: 850px
+	overflow: hidden 	
+	border-radius: 10px	
+	margin-left: 20px
 	tr 
 		&:first-child 
 			position: relative
 			td 
-				background-color: #1883b7
-				font-family: UniSansHeavyCAPS
+				background-color: #f8f8f8
+				font-family: OpenSansB
 				font-size: 17px
-				padding: 10px 15px
-				color: #fff
+				padding: 20px 15px
+				color: #000
 				border-right: none
 				font-style: normal
 				font-weight: normal
+				border-bottom: none
+				&:nth-child(3)
+					background-color: #8FD48A 
 		&:last-child
 			td
 				border-bottom: none
 	td 
 		box-sizing: border-box
 		vertical-align: middle
-		border-bottom: 1px solid #dddfe0 
-		padding: 10px 15px
+		border-bottom: 1px solid #b7d76d 
+		padding: 7.7px 15px
 		font-size: 15px
 		line-height: 1
 		font-family: OpenSansB
 		color: #1883b7
-		background-color: #f3f3f3
+		background-color: #fff
 		&:first-child
 			font-family: OpenSansB
-			color: #1883b7
+			color: rgb(119, 149, 25)
 		&:nth-child(2n) 
-	  	font-family: OpenSansI
-	  	color: #636363
+	  	font-family: OpenSans
+	  	color: rgb(47, 47, 47)
 	  	font-weight: normal
 		&:nth-child(3n) 
 			font-family: OpenSansB
-			color: #1883b7		
+			color: #FFF 	
+			background-color: #8fd48a 
 	tbody 
 		tr 
 			color: rgb(47, 47, 47)
@@ -568,69 +579,71 @@ h1
 			color: rgb(255, 102, 0)
 		
 		
-.content			
-	.last_news
-		color: #000
-		font-family: Roboto  
-		margin-top: 45px
-		margin-bottom: 30px
-		overflow: hidden
-		padding-top: 2px
-		.like_h3 
-			color: #2f2f2f
-			font-family: UniSansThinCAPS
-			font-size: 30px
-			margin-bottom: 20px
-		ul
-			li 
-				padding-left: 0
-				background: none
-				overflow: hidden
-				margin-bottom: 10px
-				font-size: 14px
-				font-family: OpenSansI
-				color: #676767
-				&:last-child 
-					margin-bottom: 0							 		
-		a
-			color: #1f5785
-			font-family: OpenSansSB
-			font-size: 16px
-			text-decoration: underline
-			margin-bottom: 10px
-			display: block
-			font-style: normal
-			&:hover 
-				text-decoration: none
-		p 
-			line-height: 1.3				
-					
-		.all_lnews_link 
-			display: block
-			text-align: right
-			color: #1f5785
-			font-family: OpenSans
+			
+.last_news
+	color: #000
+	font-family: Roboto  
+	margin-top: 45px
+	margin-bottom: 30px
+	overflow: hidden
+	padding: 2px 15px 0 15px
+	.like_h3 
+		color: rgb(47, 47, 47)
+		font-family: OpenSans
+		font-size: 30px
+		margin-bottom: 20px
+	ul
+		li 
+			padding-left: 0
+			background: none
+			overflow: hidden
+			margin-bottom: 30px
 			font-size: 14px
-			text-decoration: underline
-			margin-top: -35px
-			&:hover 
-				text-decoration: none
+			font-family: OpenSans
+			color: #000
+			width: 50%
+			float: left
+			&:last-child 
+				margin-bottom: 0							 		
+	a
+		color: rgb(100, 196, 180)
+		font-family: OpenSansSB
+		font-size: 16px
+		text-decoration: underline
+		margin-bottom: 10px
+		display: block
+		font-style: normal
+		&:hover 
+			text-decoration: none
+	p 
+		line-height: 1.3				
+				
+	.all_lnews_link 
+		display: block
+		text-align: left
+		color: rgb(100, 196, 180)
+		font-family: OpenSans
+		font-size: 14px
+		text-decoration: underline
+		margin-top: -5px
+		&:hover 
+			text-decoration: none
 
 .text_news 
-	padding: 15px 25px
 	float: left
 	box-sizing: border-box
-	width: 465px
-	background: #f3f3f3 none repeat scroll 0 0 
+	width: 400px
 
 .img_news 
 	overflow: hidden
 	float: left
 	margin-right: 0px
-	width: 375px
 	font-size: 0
-	height: 136px
 	position: relative
+	border-radius: 3px
+	height: 100px
+	width: 160px
+	margin-right: 25px
 
 .left_form
 	width: 270px
@@ -690,9 +703,9 @@ h1
 .left_widget_vk 
 	width: 270px
 	text-align: center
-	margin-top: 30px
-	margin-bottom: 40px
 	box-sizing: border-box
+	border-radius:  10px
+	overflow: hidden
 	
 .left_news 
 	.like_h3
@@ -740,36 +753,57 @@ h1
 	margin-bottom: 23px
 
 .bot_mnu 
-	margin-top: px
+	margin-top: 0
+	ul
+		width: 280px
 	li 
 		float: left
-		margin-right: 50px
+		margin-right: 10px
 		&:first-child
 			margin-left: 0
 		&:last-child
 			margin-right: 0
 	a 
 		color: white
-		font-family: OpenSansSB
-		font-size: 15px
+		font-family: MuseoSansCyrl500
+		font-size: 12px
+		color: lightgrey
+		text-decoration: underline
 		
 .social 
-	float: right
+	float: left
+.col-social
+	font-family: MuseoSansCyrl500
+	font-size: 12px
+	color: lightgrey
+	margin-top: 10px
+	div
+		float: left
+		margin-right: 20px
+		margin-top: 6px
 
 .footer 
-	background-color: rgba(24, 131, 183, 0.85)
+	background: url("../img/footer.jpg") repeat 0 0
 	color: #fff
 	overflow: hidden
-	padding: 30px 0 20px 0
+	padding: 25px 0 15px 0
 	box-sizing: border-box
+	min-height: 101px 
 
 .copy
-	font-family: OpenSans
+	font-family: MuseoSansCyrl500
 	font-size: 12px 
+	color: lightgrey 
+	padding-top: 3px
+
+.copy-contacts 
+	overflow: hidden
+	margin-bottom: 10px
 	
 .footer_adress
-	font-family: OpenSans
+	font-family: MuseoSansCyrl500
 	font-size: 12px
+	color: lightgrey
 	padding-left: 20px
 	background: url("../img/top_icon_adress.png") no-repeat left center
 	min-height: 16px
@@ -778,11 +812,12 @@ h1
 	float: right
 
 .footer_phone 
-	font-family: OpenSansSB
-	font-size: 21px
+	font-family: MuseoSansCyrl700
+	color: lightgrey 
+	font-size: 18px
 	padding-left: 20px
 	background: url("../img/top_icon_phone.png") no-repeat left center
-	float: right
+	float: left
 	span
 		font-size: 12px
 		font-family: MuseoSansCyrl500
@@ -790,8 +825,8 @@ h1
 .footer_mail
 	a
 		float: left
-		color: #fff
-		font-family: OpenSans
+		color: lightgrey
+		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline
 		padding-left: 20px

@@ -377,6 +377,12 @@ b, strong
 	box-sizing: border-box
 	width: 100%
 
+.content.img_q
+	margin-top: 20px
+	margin-bottom: 15px
+	padding: 0 15px
+	overflow: hidden
+
 .left_mnu 
 	box-sizing: border-box
 	padding: 0
@@ -442,12 +448,6 @@ b, strong
 		line-height: 1.2
 		
 .content 
-	float: right
-	width: 870px
-	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl300
-	font-size: 15px
-	line-height: 21px
 	p 
 		margin-bottom: 20px
 		overflow: hidden
@@ -471,12 +471,12 @@ h1
 		max-width: 100% 
 	h2
 		color: rgb(47, 47, 47)
-		font-family: UniSansThinCAPS
+		font-family: OpenSans
 		font-size: 27px
 		margin-bottom: 20px
 	h3
 		color: rgb(47, 47, 47)
-		font-family: UniSansThinCAPS
+		font-family: OpenSans
 		font-size: 24px
 		margin-bottom: 20px
 
@@ -839,7 +839,7 @@ h1
 	font-size: 15px 
 .bread 
 	width: 100%
-	padding: 20px 0 0 0
+	padding: 20px 0 2px 0
 	box-sizing: border-box
 	overflow: hidden
 	background-color: #FFF
@@ -847,8 +847,8 @@ h1
 		padding: 0 15px
 	li 
 		float: left
-		font-size: 14px
-		font-family: OpenSans
+		font-size: 12px
+		font-family: RobotoBI
 		margin-bottom: 10px
 		margin: 0
 		padding: 0
@@ -858,13 +858,13 @@ h1
 			content: "" 	
 		a
 			font-size: 12px
-			color: rgb(47, 47, 47)
+			color: rgb(106, 105, 102)
 			text-decoration: underline
 			&:hover 
 				text-decoration: none
 			
 			&:after 
-				line-height: 1.4
+				line-height: 1
 				font-size: 12px
 				font-family: OpenSans
 				content: "/"
@@ -874,7 +874,7 @@ h1
 				margin-left: 10px
 				display: inline
 		span
-			color: rgb(24, 131, 183)
+			color: rgb(162, 186, 71)
 			font-size: 12px
 
 .mb30
@@ -890,7 +890,7 @@ h1
 	ul 
 		li 
 			padding-left: 20px
-			background: url("../img/def.png") no-repeat left center 		
+			background: url("../img/def.png") no-repeat left top 4px
 	ol 
 		list-style-type: none
 		counter-reset: num
@@ -899,16 +899,17 @@ h1
 			&:before 
 				content: counter(num) ' '
 				counter-increment: num
-				color: rgb(24, 131, 183)
-				font-family: UniSansHeavyCAPS
+				color: rgb(98, 207, 171)
+				font-family: OpenSansB
 				font-size: 14px							
 				text-align: center
 				display: block
 				float: left
-				line-height: 1.6
+				line-height: 1.5
 				margin-right: 10px
-				width: 21px
-				height: 21px
+				width: 22px
+				height: 22px
+				background: url("../img/def2.png") no-repeat 0 0
 				
 .white_content
 	border-radius:  4px
@@ -929,39 +930,22 @@ h1
 	overflow: hidden
 
 blockquote
-	background-color: #f3f3f3
 	color: #000
-	font-family: OpenSans
+	font-family: Roboto
 	font-size: 15px
 	line-height: 21px
-	padding: 35px 20px 20px 20px
+	padding: 30px 35px
 	box-sizing: border-box
 	width: 100%
 	position: relative
 	overflow: hidden
 	margin-bottom: 30px
-	&:before
-		content: "“";
-		font-size: 48px
-		font-family: OpenSans
-		color: rgb(24, 131, 183)
-		position: absolute 
-		left: 25px
-		top: 25px
+	background-color: #000 
+	background-image: linear-gradient(to top, rgb(94, 207, 174) 0%, rgb(192, 216, 103) 100%)
+	border-radius: 10px
 	p
-		padding-left: 40px
-	&:after
-		content: "”" 
-		font-size: 48px
-		font-family: OpenSans
-		color: rgb(24, 131, 183)
-		position: absolute 
-		bottom: 60px
-		right: 20px
-	
 	b 
-		color: rgb(24, 131, 183)
-		font-family: OpenSansSB 
+		font-family: RobotoMI 
 		font-weight: normal !important
 		font-size: 15px
 	
